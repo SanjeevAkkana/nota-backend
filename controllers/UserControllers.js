@@ -14,8 +14,8 @@ export const getAllUsers = (req, res) => {
 const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: "asanjeevroyal@gmail.com",
-        pass: "lzjz zedc qkxn acnv",
+        user: process.env.MAIL_USER,
+        pass: process.env.MAIL_PASSWORD,
     },
 });
 
